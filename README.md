@@ -92,6 +92,9 @@ facial-expression-recognition/
 
 **SGD lr=0.01:** ყველაზე ჯანსაღი run — train და val accuracy ერთად იზრდება, overfitting ნაკლებია. SGD-ს momentum უფრო სტაბილური gradient updates-ი აქვს ამ შემთხვევაში.
 
+<img width="1787" height="495" alt="image" src="https://github.com/user-attachments/assets/9785815e-0a81-454c-89e2-d7dad5820b48" />
+
+
 ---
 
 ## მოდელი 2 — Deep CNN with BatchNorm & Dropout
@@ -130,6 +133,9 @@ Model 1-ში დავინახეთ overfitting. გადავწყვ
 **weight decay:** dropout=0.5 + weight decay = ორმაგი regularization, რაც კიდევ უფრო აძლიერებს underfitting-ს.
 
 **Note:** StepLR-ი step_size=7, gamma=0.1-ით ძალიან aggressive-ია 20 epoch-ისთვის. LR ძალიან სწრაფად კვდება convergence-მდე.
+
+
+<img width="1790" height="495" alt="image" src="https://github.com/user-attachments/assets/6da1beb1-9b70-49ec-85c9-1cd5e08498e4" />
 
 ---
 
