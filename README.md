@@ -23,6 +23,9 @@ Kaggle competition: [Challenges in Representation Learning: Facial Expression Re
 | Validation set | ~2,871 (10%) |
 | Test set | test.csv |
 
+<img width="560" height="491" alt="image" src="https://github.com/user-attachments/assets/60f00b07-a50b-4406-82fe-80bcb88692d0" />
+
+
 **Class imbalance პრობლემა:**
 - Happy: 8,989 სურათი (ყველაზე მეტი)
 - Disgust: 547 სურათი (ყველაზე ცოტა)
