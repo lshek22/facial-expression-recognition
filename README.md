@@ -159,9 +159,9 @@ FER2013 grayscale-ია, ResNet კი RGB-ს ელის — პირვე
 
 | Run | Pretrained | Backbone | Train Acc | Val Acc | დიაგნოზი |
 |---|---|---|---|---|---|
-| finetune-all | ✓ | Trainable | 72.9% | 56.3% | Overfitting |
-| frozen-backbone | ✓ | Frozen | 26.8% | 28.8% | Severe Underfitting |
-| **scratch** | ✗ | Trainable | **76.1%** | **61.6%** | Best |
+| finetune-all | Yes | Trainable | 72.9% | 56.3% | Overfitting |
+| frozen-backbone | Yes | Frozen | 26.8% | 28.8% | Severe Underfitting |
+| **scratch** | No | Trainable | **76.1%** | **61.6%** | Best |
 
 ### ანალიზი
 
@@ -170,6 +170,9 @@ FER2013 grayscale-ია, ResNet კი RGB-ს ელის — პირვე
 **Frozen backbone:** ყველაზე სუსტი შედეგი. მიზეზი: ImageNet features RGB high-resolution სურათებზეა trained. 48×48 grayscale სახის სურათებზე ეს features არ გადადის კარგად — backbone "არასწორ" features-ს ამოიცნობს.
 
 **From scratch:** მოულოდნელად საუკეთესო შედეგი მიზეზი: ResNet-ის არქიტექტურა (residual connections, batch norm) თავისთავადძლიერია. Higher LR (0.001 vs 0.0001) + CosineAnnealing უფრო კარგად მუშაობს ამ dataset-ზე. მოდელი task-specific features-ს სწავლობს scratch-იდან.
+
+<img width="1790" height="495" alt="image" src="https://github.com/user-attachments/assets/dc2ae2ba-730a-4fea-b462-2b835578c83f" />
+
 
 ---
 
